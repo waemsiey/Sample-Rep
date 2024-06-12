@@ -35,13 +35,13 @@ document.getElementById("togglePassword").addEventListener("click", function() {
 
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        toggleIcon.classList.remove("bx-hide");
-        toggleIcon.classList.add("bx-show");
+        toggleIcon.classList.remove("bx-show");
+        toggleIcon.classList.add("bx-hide");
         toggleIcon.title = "Hide Password";
     } else {
         passwordInput.type = "password";
-        toggleIcon.classList.remove("bx-show");
-        toggleIcon.classList.add("bx-hide");
+        toggleIcon.classList.remove("bx-hide");
+        toggleIcon.classList.add("bx-show");
         toggleIcon.title = "Show Password";
     }
 });
