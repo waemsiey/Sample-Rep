@@ -39,18 +39,17 @@ document.getElementById("RegistrationID").addEventListener("submit", function(ev
 
 document.getElementById("togglePassword").addEventListener("click", function() {
     var passwordInput = document.getElementById("password");
-    var toggleIcon = document.getElementById("togglePassword").querySelector("i");
-    
+    var toggleIcon = document.getElementById("togglePassword");
+
     if (passwordInput.type === "password") {
         passwordInput.type = "text";
-        toggleIcon.classList.remove("bx-hide"); 
+        toggleIcon.classList.remove("bx-hide");
         toggleIcon.classList.add("bx-show");
-        toggleIcon.parentElement.title = "Hide Password";
+        toggleIcon.title = "Hide Password";
     } else {
         passwordInput.type = "password";
-        toggleIcon.className = "bx bx-hide";
         toggleIcon.classList.remove("bx-show");
         toggleIcon.classList.add("bx-hide");
-        toggleIcon.parentElement.title = "Show Password";
+        toggleIcon.title = "Show Password";
     }
 });
